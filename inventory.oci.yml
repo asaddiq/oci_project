@@ -1,14 +1,7 @@
 plugin: oracle.oci.oci
 regions: uk-london-1
-fetch_db_hosts: true
+fetch_db_hosts: false
 primary_vnic_only: True
 enable_parallel_processing: yes
 
 
-# Select compartment by OCID or name
-compartments:
-#  - compartment_ocid: ocid1.compartment.oc1..aaaaaaaavjkj5enfj6qjqdhuwjo6lse6xzmaq2bcpsnondnzo4nvdiv4otfq
-#    fetch_hosts_from_subcompartments: false
-
-  - compartment_name: "{{ compartment_name }}"
-    parent_compartment_ocid: ocid1.compartment.oc1..aaaaaaaavjkj5enfj6qjqdhuwjo6lse6xzmaq2bcpsnondnzo4nvdiv4otfq
